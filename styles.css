@@ -1,0 +1,38 @@
+/*DISEÑO DE LA PAGINA */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: bisque;
+}
+
+header {
+    background-color: aqua;
+    padding: 16px;
+}
+
+nav {
+    display: flex;
+    gap: 16px;
+    background-color: black;
+    padding: 12px 16px;
+}
+
+nav a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    padding: 16px;
+}
+
+footer {
+    background-color: blueviolet;
+    padding: 12px 16px;
+    text-align: center;
+}
