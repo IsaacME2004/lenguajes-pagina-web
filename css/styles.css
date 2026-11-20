@@ -27,12 +27,42 @@ nav a {
 }
 
 main {
-    flex: 1;
+    display: flex;
     padding: 16px;
+    gap: 16px;
 }
 
 footer {
     background-color: blueviolet;
     padding: 12px 16px;
     text-align: center;
+}
+
+section{
+    flex: 1;
+}
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 16px;
+}
+
+article{
+    background-color: brown;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+@media (max-width: 768px){
+    main{
+        flex-direction: column;
+    }
+    .tarjetas{
+        grid-template-columns: 1fr;
+    }
+    aside{
+        width: auto;
+    }
 }
